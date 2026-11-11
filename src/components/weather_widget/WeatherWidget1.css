@@ -1,0 +1,67 @@
+@keyframes rotate{
+    from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sun{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    overflow: hidden;    
+    
+}
+
+.sun img{
+    width: 180%;
+    height: 180%;
+    object-fit: contain;
+    position: absolute; 
+    left: -200px;
+    top: 60px;
+    animation: rotate 10s linear infinite;  
+    
+}
+
+.earth{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(221, 126, 49);
+    border-radius: 50%;
+    offset-path: ellipse(200px 90px at center); 
+    offset-distance: 75%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;       
+}
+
+.earth.sunrise {
+    background-color: rgb(231, 193, 158);
+    offset-distance: 50%;
+}
+
+.earth.sunset {
+    background-color: #361c02;
+    offset-distance: 100%;
+}
+
+.layer{
+    width: 100%;
+    position: absolute;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lay div{
+    height: 100%;
+    height: 100%;
+}
+
+.layer p{
+    padding: 10px 0px;
+    color: white;
+    text-align: center;
+}

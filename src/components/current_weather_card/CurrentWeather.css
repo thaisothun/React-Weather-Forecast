@@ -1,0 +1,81 @@
+.current-weather-info-container {
+    color: white;
+    margin: 40px;
+}
+
+.current-weather-info-container p {
+    font-size: 2em;
+    color: white;
+    text-transform: capitalize;
+}
+
+.current-weather-detail{
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.current-weather-detail p{
+    font-size: 1em;
+    padding: 10px 20px;
+    text-transform: none;
+}
+
+.current-weather-detail img{
+    width: 100px;
+    height: 100px;   
+}
+
+#temperature{
+    font-size: 5em;
+}
+
+#location-icon{
+    width: 25px;
+    height: 25px;
+}
+
+#location{
+    font-size: 1em;
+    display: inline-block;
+    
+}
+
+#humidity{
+    font-size: 0.75em;
+    display: inline-block;
+    margin-left: 20px;
+    border : 1px solid rgb(181,230,29,0.8);
+    border-radius: 15px;
+    padding: 5px 5px;
+}
+
+#timedate{
+    font-size: 0.75em;
+    display: inline-block;
+    margin-left: 20px;
+    border : 1px solid rgb(181,230,29,0.8);
+    border-radius: 15px;
+    padding: 5px 5px;
+}
+
+#windspeed{
+    font-size: 0.75em;
+    display: inline-block;
+    margin-left: 20px;
+    border : 1px solid rgb(181,230,29,0.8);
+    border-radius: 15px;
+    padding: 5px 5px;
+}
+
+#icon{
+    background-color: rgba(124, 123, 123, 0.61);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 5px;
+    border: 1px solid rgba(224, 224, 224, 0.3);
+}

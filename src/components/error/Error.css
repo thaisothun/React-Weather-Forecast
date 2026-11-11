@@ -1,0 +1,123 @@
+@keyframes animate-Success{
+    0% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+}
+
+@keyframes animate-fail-city{
+    0% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animate-fail{
+    0% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;}
+}
+
+.notification{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+
+.Success{
+    width: auto;
+    height: 50px;
+    background-color: #292929; 
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: animate-Success 4s ease forwards;
+}
+
+.Success img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Success span{
+    margin-left: 10px;
+    color: white;
+    font-size: 1.25em;
+}
+
+.Fail{
+    width: auto;
+    height: 50px;
+    background-color: #292929; 
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: animate-fail 0.5s ease forwards;
+}
+
+.Fail img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Fail span{
+    margin-left: 10px;
+    color: white;
+    font-size: 1.25em;
+}
+
+.Fail-city{
+    width: auto;
+    height: 50px;
+    background-color: #292929; 
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: animate-fail-city 0.5s ease forwards;
+}
+
+.Fail-city img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Fail-city span{
+    margin-left: 10px;
+    color: white;
+    font-size: 1.25em;
+}

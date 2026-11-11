@@ -1,0 +1,78 @@
+.recharts-wrapper *:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+.chart{
+  width: 70%; 
+  height: 300px;
+}
+
+.chart-point-group {
+  cursor: pointer;
+  transform-origin: center; 
+}
+
+.point-background-border {
+  fill: #292929;                
+  stroke: #d4d4d48c;               
+  stroke-width: 1px;            
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+.point-image {
+  pointer-events: none;
+}
+
+.point-background-border:hover{
+    stroke: #b5e61dcc;
+}
+
+.temperature{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    width: 80%;
+    text-align: center;
+    padding-left: 40px;
+    font-size: 1.5em;
+    margin: 50px 0px;
+}
+
+.forecaseWeather-detail{
+  width: 50%;
+  height: 60%;
+  background-color: #292929;
+  position: fixed;
+  top: 30%;
+  border-radius: 15px;
+  z-index: -99;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forecaseWeather-detail.active{
+  opacity: 1;
+  z-index: 99;
+  top: 15%;
+}
+
+.forecaseWeather-detail button{
+  all:unset;
+  background-color: #b5e61dcc;
+  font-size: 1.25em;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;  
+}
+
+.forecaseWeather-detail button:hover{
+  color: #292929;
+}
+
+

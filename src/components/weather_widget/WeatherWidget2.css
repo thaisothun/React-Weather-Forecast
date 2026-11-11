@@ -1,0 +1,60 @@
+.weather-widget2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 250px;
+}
+
+.grid1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid1 p{
+    color: black;
+    width: 100%;
+    font-size: 1.15em;
+    background-color: #b4e61d;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.grid2{
+    padding: 20px;
+}
+
+.grid2 p{
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    right: 100px;
+    top: 42%;
+}
+
+.animated-direction{
+    margin-left: 5px;
+    width: 198px;
+    height: 198px;
+    transition: 0.5s ease-in;    
+}
+
+#campass{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    right: -75px;
+}
+
+#direction{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 43%;
+    object-fit: contain;
+    transition: 0.3s ease-in;   
+}
+
