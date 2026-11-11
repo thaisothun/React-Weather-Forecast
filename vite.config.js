@@ -4,8 +4,6 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/React-Weather-Forecast/',
-  build: {
-    emptyOutDir: true, // Forces Vite to wipe old build artifacts
-  },
+  base: '/',
+  
 })
