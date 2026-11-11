@@ -115,7 +115,6 @@ function App() {
         setIsAiLoading(true);
         try{
             const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-            console.log(`dadfd : ${GEMINI_API_KEY}`)
             const ai = new GoogleGenAI({apiKey: GEMINI_API_KEY});
             const response = await ai.models.generateContent({
                 model: 'gemini-3.6-flash',
