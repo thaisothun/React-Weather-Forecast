@@ -56,7 +56,7 @@ function handlePointClick (dataPoint, index) {
                             Tone: Light, encouraging, and brief (under 200 words).`,
             });
             setAiResponse(response.text);
-            console.log(foreCastDetail)
+            console.log(foreCastDetail.city)
         } catch(error) {
             console.error("Error generating AI response:", error);
             setAiError('Ai Response Fail...');
