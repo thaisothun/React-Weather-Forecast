@@ -47,16 +47,15 @@ function handlePointClick (dataPoint, index) {
             const response = await ai.models.generateContent({
                 model: 'gemini-3.6-flash',
                 contents: `Role: Act as a helpful personal assistant.
-                            Task: Look up or use the current weather data for ${forecaseWeatherDetail[0].city} time ${forecaseWeatherDetail[0].date.getDate()}.
+                            Task: Look up or use the current weather data for ${foreCastDetail[0].city}.
                             Include:
-                            • ${forecaseWeatherDetail[0]?.temperature} and write a details description with expect condition for whole day using weather description 
-                            ${forecaseWeatherDetail[0].description} humidity ${forecaseWeatherDetail[0].humidity} wind speed ${foreCastDetail[0]?.wind_speed} wind gust ${foreCastDetail[0]?.wind_gust} 
+                            • ${foreCastDetail[0]?.temperature} and write a details description with expect condition for whole day using weather description 
+                            ${foreCastDetail[0].description} humidity ${foreCastDetail[0].humidity} wind speed (${Math.round(foreCastDetail[0]?.wind_speed*3.6)} KM/H wind gust ${Math.round(foreCastDetail[0]?.wind_gust)} KM/H 
                             • Practical recommendations
                             • write as new paragraph sentence for recommendations
                             Tone: Light, encouraging, and brief (under 200 words).`,
             });
             setAiResponse(response.text);
-            console.log(foreCastDetail[0].city)
         } catch(error) {
             console.error("Error generating AI response:", error);
             setAiError('Ai Response Fail...');

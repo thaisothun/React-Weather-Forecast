@@ -122,7 +122,7 @@ function App() {
                             Task: Look up or use the current weather data for ${currentWeather?.city} time ${dateTime.getTime()}.
                             Include:
                             • ${currentWeather?.temperature} and write a details description with expect condition for whole day using weather description 
-                            ${currentWeather?.description} humidity ${currentWeather?.humidity} wind speed ${currentWeather?.wind_speed} wind gust ${currentWeather?.wind_gust}
+                            ${currentWeather?.description} humidity ${currentWeather?.humidity} wind speed ${Math.round(currentWeather?.wind_speed)} wind gust ${Math.round(currentWeather?.wind_gust)}
                             • Practical recommendations
                             • write as new paragraph sentence for recommendations
                             Tone: Light, encouraging, and brief (under 200 words).`,
